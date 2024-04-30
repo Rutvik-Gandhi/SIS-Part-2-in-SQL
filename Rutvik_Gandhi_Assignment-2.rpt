@@ -1,0 +1,179 @@
+﻿W23 PROG8080 Section 3
+Assignment 2
+ 
+Rutvik Gandhi
+ 
+Feb 11 2023  1:14AM
+ 
+List the courses for the program code ‘0066C’. Include the school code,
+program code, course number and semester in the result. Order the ProgramCourse
+result by the semester and course number.
+ 
+schoolCode code  courseNumber semester
+---------- ----- ------------ -----------
+EIT        0066C CDEV1020     1
+EIT        0066C INFO1030     1
+EIT        0066C INFO1570     1
+EIT        0066C INFO8000     1
+EIT        0066C PROG8080     1
+EIT        0066C PROG8090     1
+EIT        0066C INFO2080     2
+EIT        0066C INFO8105     2
+EIT        0066C PROG1800     2
+EIT        0066C PROG2230     2
+
+(10 rows affected)
+
+List the required course prerequisites for COMP2280. Include the course 
+code, prereq and prereq course names in the result. Order the result by the 
+prerequisite course code in descending order. Use the implicit join syntax.
+ 
+Course Code Prereq   Prereq Course Name
+----------- -------- ----------------------------------------------------------------------
+COMP2280    MGMT2050 ITSS Project Management
+COMP2280    INFO1570 Technology Infrastructure: Fundamentals
+COMP2280    COMP2160 Application Software
+COMP2280    COMP2050 Applied SQL
+
+(4 rows affected)
+
+List the persons from the Person table who are not students. Show the
+person’s number, first name, last name, and city. Use LEFT OUTER JOIN. Order 
+the results by the person’s last name.
+ 
+number  lastName                                           firstName                                          street                                                                           city                           provinceCode countryCode postalCode mainPhone                      alternatePhone                 collegeEmail                                                                     personalEmail                                                                    birthdate               number  isInternational academicStatusCode financialStatusCode sequentialNumber balance               localStreet                                                                      localCity                      localProvinceCode localCountryCode localPostalCode localPhone
+------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------------------------------------- ------------------------------ ------------ ----------- ---------- ------------------------------ ------------------------------ -------------------------------------------------------------------------------- -------------------------------------------------------------------------------- ----------------------- ------- --------------- ------------------ ------------------- ---------------- --------------------- -------------------------------------------------------------------------------- ------------------------------ ----------------- ---------------- --------------- ------------------------------
+6434468 ARUNKUMAR                                          RINA                                               240 WENTWORTH ST APT 31                                                          KITCHENER                      ON           CAN         N9C 3X3    (519) 177-7775                 (519) 144-4457                 rarunkumar@conestogac.on.ca                                                      rarunkumar@fastnet.ca                                                            1960-01-11 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+8436780 DISTEFANO                                          LINDY                                              269 MICHENER AVE                                                                 KITCHENER                      ON           CAN         N2A 3V6    (519) 128-8327                 (519) 132-3847                 ldistefano@conestogac.on.ca                                                      ldistefano@whatnet.on.ca                                                         1964-03-27 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+7572373 HUHN                                               KATHY                                              26 TIPPERARY AVE                                                                 GUELPH                         ON           CAN         N1H 2A3    (519) 122-2682                 (519) 125-3834                 khun@conestogac.on.ca                                                            khun@funnet.ca                                                                   1967-09-12 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+8383259 KARASEVICZ                                         ANNA                                               170 PAPE ST                                                                      KITCHENER                      ON           CAN         M4M 2W3    (519) 187-8665|                (416) 127-8572                 akarasevicz@conestogac.on.com                                                    akarasevicz@gamergold.com                                                        1977-05-12 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+3455730 KARSH,                                             DALE                                               342 ARGUS ST E                                                                   GUELPH                         ON           CAN         R2C 1J6    (519) 183-3646                 (204) 153-8355                 dkarsh@conestogac.on.ca                                                          dkarsh@cheapnfast.com                                                            1963-01-11 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+3566163 KATHIRESAN                                         ABDOLSAMAD                                         93 WINDERHEIGHTS ST W                                                            WATERLOO                       ON           CAN         N2T 1P1    (519) 122-2682                 (519) 125-3834                 akathiresan@conestogac.on.ca                                                     akathiresan@scratchworx.com                                                      1960-07-19 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+6860242 LEIER                                              JESSICA                                            353 BANKSIDE ST N                                                                KITCHENER                      ON           CAN         N2N 3J9    (519) 147-7842                 519) 138-5636|                 jleier@conestogac.on.ca                                                          jleier@whatnet.on.ca                                                             1961-02-28 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+6886352 SILIADOR                                           ISAAC                                              43 Sandalwood Ave                                                                KITCHENER                      ON           CAN         R2V 3V5    (519) 162-7775                 (519) 172-2222                 risiliado@conestogac.on.ca                                                       isiliado@webworks.com                                                            1959-02-12 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+3214350 SIMS                                               PAULETTE                                           434 BOYNE ST                                                                     KITCHENER                      ON           CAN         E3B 2A8    (519) 157-4828                 (506) 172-2624                 psims@conestogac.on.ca                                                           psims@netnutz.biz                                                                1963-01-11 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+5512736 TRANG                                              KEN                                                469 SEVERIN ST                                                                   CAMBRIDGE                      ON           CAN         N7S 2B7    (519) 185-7653                 (519) 125-6244                 ktrang@conestogac.on.ca                                                          ktrang@cannet.ca                                                                 1972-01-15 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+3514239 WEKENMANN                                          RAKESH                                             461 ROBSON ST                                                                    KITCHENER                      ON           CAN         R2C 2Y8    (519) 185-2783                 (519) 186-3246                 rwekenmann@conestogac.on.ca                                                      rwekenmann@fishnet.nl.ca                                                         1972-07-19 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+8135170 WHETSTONE                                          RICK                                               191 DARWIN ST                                                                    KITCHENER                      ON           CAN         R2M 3X7    (519) 148-8482                 (204) 148-8482                 rwhetstone@conestogac.on.ca                                                      rwhetstone@webworks.com                                                          1952-11-12 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+2117745 YUROVIC                                            LYNDOL                                             309 OTONABEE ST                                                                  KITCHENER                      ON           CAN         N2C 1L6    (519) 122-2682                 (519) 125-3834                 lyurovic@conestogac.on.ca                                                        lyurovic@kidsafe.net                                                             1984-10-11 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+4427732 ZABLAN                                             ANGEL                                              282 FOREST EDGE ROAD                                                             KITCHENER                      ON           CAN         N2P 2L9    (519) 128-5854                 (519) 158-6548                 azablan@conestogac.on.ca                                                         azablan@arachnet.ca                                                              1979-08-12 00:00:00.000 NULL    NULL            NULL               NULL                NULL             NULL                  NULL                                                                             NULL                           NULL              NULL             NULL            NULL
+
+(14 rows affected)
+
+List the lab software installed on machines in room 2A205. List each
+software package’s unique identifier along with the software product’s name. 
+Order the result by software product name. Use the explicit join syntax.
+ 
+product                                            uniqueId
+-------------------------------------------------- ------------------------------------
+Adobe Master Collection - Adobe                    E0B20487-B868-4C3A-8EBC-C01512374C48
+Astah - Open Source                                F22D6892-F8C8-4D1B-8FFC-6400BBBA6EC3
+Dreamweaver - Adobe                                CDDBAA39-074E-4A69-AEA7-4922E912EF48
+Flash - Adobe                                      6735A41F-C951-4E06-A01D-55E4FDF1F6E4
+Illustrator - Adobe                                0C7CBEE8-FC72-4B91-A4B8-F624DCF641D6
+Insight - Faronics                                 FD0D173E-E7B2-4750-834D-9E8BAA5332D2
+Java JDK with NetBEANS - Sun Microsystems          9946CC35-283C-4AE9-8CEC-E307CECA8ED8
+Mobile Apps Software - Various                     F3A71F8C-60B5-42B8-BEF5-32BEA2CDEE40
+MySQL - Open Source                                11F84F71-C0B3-4AED-922D-58328E021CF7
+Office - Microsoft                                 197EC64E-C5A6-4453-96D0-08C0B2F85053
+Oracle - Oracle                                    4DE945A8-60AD-4869-8533-200BB63FE996
+PhotoShop - Adobe                                  D21D68F3-6BB4-431D-9721-218F7F9ABB26
+PHP - Open Source                                  6045AA05-2129-495F-9EBE-C712BBC90BDA
+Project  - Microsoft                               78245EEA-A27B-45F0-9C45-78DDEBFFD509
+Publisher  - Microsoft                             1901D208-2907-41EE-B87B-015B81DADFA9
+Simply Accounting - Sage                           157ACED8-B259-4A97-B609-A9FB169F7A92
+SSH Secure Shell - SSH                             2AB2CDDC-1B60-4582-AFC8-9D53AB844344
+Textpad Editor - Helios Software                   E88CDB3D-DFDC-4E35-81A9-8AD3E4BABD8D
+Visio  - Microsoft                                 A933D170-F6F4-4A2F-85D3-4CD5E5D5C0F0
+Visual Studio .NET - Microsoft                     DBF184BF-785A-4FD3-8675-DB41383AC5DA
+
+(20 rows affected)
+
+Show Employee e1.number aliased as ‘Employee’ and Employee e1.reportsTo 
+aliased as ‘Supervisor’ and Employee e2.reportsTo aliased as ‘Supervisor 
+Reports To’. Order the results by e1.reportsTo. Do left outer self-join 
+(e1.reportsTo = e2.number).
+ 
+EMPLOYEE SUPERVISOR Supervisor Reports To
+-------- ---------- ---------------------
+4427732  NULL       NULL
+6434468  NULL       NULL
+6860242  NULL       NULL
+8436780  NULL       NULL
+7572373  4427732    NULL
+8135170  4427732    NULL
+2117745  4427732    NULL
+3214350  4427732    NULL
+3455730  4427732    NULL
+3514239  4427732    NULL
+3566163  4427732    NULL
+8383259  6434468    NULL
+5512736  6860242    NULL
+6886352  8436780    NULL
+
+(14 rows affected)
+
+Show CourseOffering courseNumber, CourseStudent minimum  finalMark aliased
+as ‘Lowest Mark’, CourseStudent average finalMark aliased as ‘Average Mark’ and
+CourseStudent maximum finalMark aliased as ‘Highest Mark’ for the Winter 2010 
+session grouped by courseNumber. Report all grades as whole numbers.
+ 
+courseNumber Lowest Mark            Average Mark           Highest Mark
+------------ ---------------------- ---------------------- ----------------------
+INFO2080     63                     77                     83
+INFO8105     75                     85                     94
+PROG1800     70                     84                     94
+PROG2230     51                     68                     82
+
+(4 rows affected)
+
+List the number of courses taught by employees in the School of Engineering
+and IT (EIT), for those courses offered in any semester of 2008 or 2009. Include
+in the result the employee number, “user id” in caps (i.e., first three letters
+of last name and last 3 characters of employee number), along with the count of
+the number of courses that they taught, aliased with “# Courses Taught”. Order 
+the result by “userid”. Use only inner joins (explicit syntax).
+ 
+Employee USER ID # Course Taught
+-------- ------- ---------------
+7572373  HUH373  3
+3455730  KAR730  2
+3566163  KAT163  2
+3514239  WEK239  3
+8135170  WHE170  3
+2117745  YUR745  3
+
+(6 rows affected)
+
+Produce a list of all of the co-op programs and the total tuition for 
+those programs over all semesters. As these amounts are for co-op programs, the
+base tuition amount must be increased by the corresponding co-op multiplier for
+each specific program. Output the program acronym and program name in the result,
+along with the total tuition (i.e., Total Fees). Use FORMAT() to display the 
+Total Fees in dollars and cents.
+ 
+Program Program Name                                       Total Fees
+------- -------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CAD     Computer Applications Development (Coop)           $6,760.00
+CPA     Computer Programmer/Analyst (Coop)                 $9,632.00
+ITSS    Information Technology Support Services (Coop)     $7,248.00
+ITID    IT Innovation and Design (Coop)                    $9,642.56
+
+(4 rows affected)
+
+List the students who have made payments, by cheque or cash only. Include
+the student number, last name, first name and total payment amount in your answer.
+Only display students with total payment amount of at least $10,000.00. Order 
+the result by total payment amount in descending order. Use a join to produce
+the result.
+ 
+Student Number Last Name                                          First Name                                         Total Payment Amount
+-------------- -------------------------------------------------- -------------------------------------------------- ---------------------
+2642726        BICKERS                                            SANDRA                                             13159.00
+3868247        KALINOWSKI                                         MELINDA                                            13159.00
+1335314        NOLAN                                              JOSEPH                                             10000.00
+
+(3 rows affected)
+
+
+Completion time: 2023-02-11T01:14:53.5723101-05:00
